@@ -12,6 +12,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val month = c.get(Calendar.MONTH)
         var year = c.get(Calendar.YEAR)
 
-        btnPickDate.setOnClickListener {view : View ->
+       /* btnPickDate.setOnClickListener {view : View ->
 
             val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener
 
@@ -39,15 +41,14 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        }
+        }*/
 
 
-        btnCheck.setOnClickListener{
-            calculate(year)
-        }
+
 
 
     }
+
 
 
     fun calculate(year : Int)
